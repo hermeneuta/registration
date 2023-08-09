@@ -8,14 +8,13 @@ Registration was open from 1:30pm to 4pm one day before the workshops. At 10am o
 
 ### How To
 
-#### Solution
 For our aim, we decided to use the [Tito](tito.io) platform. It's free of charge when you create free events, and it comes with many practical functionalities, such as allowing the scheduling of tickets, sending emails when registration occurs, or exporting attendee and waiting list data. 
 Additionally, we created scripts to enhance the process of exporting data from Tito.
 
-#### Requirements
+##### Requirements
 To perform the actions described below, it is beneficial to have basic knowledge of JavaScript programming (especially in the Node.js environment) and an understanding of how to use the terminal.
 
-##### Structure of a Ticket Name
+#### Structure of a Ticket Name
 When designing the ticket name, we follow this structure:
 **workshop title | instructor | day and hour | place**
 
@@ -24,7 +23,7 @@ When designing the ticket name, we follow this structure:
 
 This structure was informative both for the participants and for the person managing the registration.
 
-##### Exporting
+#### Exporting
 After registration is finished, we need to export two files in CSV format. 
 
 The first file contains information about attendees for a given day. To do so:
@@ -42,7 +41,7 @@ The second file will be with people from waiting list.
 3. Export people from the Waiting List, making sure to include only those from the day you are interested in.
 4. Rename the exported file to **wait.csv**
 
-##### Scripts
+#### Scripts
 
 1. Move to your project folder on your local machine (e.g., `~/EJC`) and clone this repo:
 `git clone git@github.com:hermeneuta/registration.git`
@@ -58,13 +57,13 @@ The repository contains four files:
 5. After that, run `node convert_to_pdf.js` to produce a nicely formatted PDF file.  
 6. Now, you can simply print your PDF file.
 
-##### Dependencies
+#### Dependencies
 In order to work, the scripts mentioned above require some additional dependencies:
 - _pandoc_: program that allows for the conversion different formats.
 - _LaTeX_: Required to ensure that the `headers.tex` file works properly.
 - _papaparse_: This package should be downloaded when you initialized npm, due to its presence in the `package.json` file from the repository.
 
-#### Problems
+### Help
 Although this solution allows you to produce lists quickly each day without tedious manual work, it may be challenging for a person who never worked with Node.js environment or the terminal. If you encounter any problems with setting up, or if you think that this manual isn’t clear, please feel free to contact me at hello@mathesis.dev. I’ll do my best to help you. 
 
  
