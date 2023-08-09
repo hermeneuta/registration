@@ -1,7 +1,7 @@
 ## EJC Workshop Registration
 
 ### Aim
-Acro and aerial workshops are very popular during EJC. Unfortunately, there are usually **not enough equipment** to accommodate everyone, and therefore some form of registration is needed. Knowing from experience that offline registration can create huge queues and be time-consuming, we have decided to go online and use the [Tito] platform for the 2023 EJC edition. This manual describes** the best practices for creating fast, accurate, and easy-to-print lists of attendees, as well as those on waiting lists, for every workshop on a given day.** The described solution equips you with scripts that prevent the tedious process of copying and pasting data.
+Acro and aerial workshops are very popular during EJC. Unfortunately, there are usually **not enough equipment** to accommodate everyone, and therefore some form of registration is needed. Knowing from experience that offline registration can create huge queues and be time-consuming, we have decided to go online and use the [Tito](tito.io) platform for the 2023 EJC edition. This manual describes **the best practices for creating fast, accurate, and easy-to-print lists of attendees, as well as those on waiting lists, for every workshop on a given day.** The described solution equips you with scripts that prevent the tedious process of copying and pasting data.
 
 ### Registration overview
 Registration was open from 1:30pm to 4pm one day before the workshops. At 10am on the day of the workshops, we delivered the printed lists of attendees and people on the waiting list to the acro desk, from where instructors could pick up the proper papers. In cases where there were empty slots, instructors had the option to accept people from the waiting list.
@@ -9,7 +9,7 @@ Registration was open from 1:30pm to 4pm one day before the workshops. At 10am o
 ### How To
 
 #### Solution
-For our aim, we decided to use the [Tito] platform. It's free of charge when you create free events, and it comes with many practical functionalities, such as allowing the scheduling of tickets, sending emails when registration occurs, or exporting attendee and waiting list data. 
+For our aim, we decided to use the [Tito](tito.io) platform. It's free of charge when you create free events, and it comes with many practical functionalities, such as allowing the scheduling of tickets, sending emails when registration occurs, or exporting attendee and waiting list data. 
 Additionally, we created scripts to enhance the process of exporting data from Tito.
 
 #### Requirements
@@ -18,8 +18,10 @@ To perform the actions described below, it is beneficial to have basic knowledge
 ##### Structure of a Ticket Name
 When designing the ticket name, we follow this structure:
 **workshop title | instructor | day and hour | place**
-Example:
-(img)
+
+![attendees](https://github.com/hermeneuta/registration/assets/53684759/1f23f1b3-8a47-40a3-be4c-4e59bac8e49f)
+
+
 This structure was informative both for the participants and for the person managing the registration.
 
 ##### Exporting
@@ -34,9 +36,11 @@ The first file contains information about attendees for a given day. To do so:
 
 The second file will be with people from waiting list. 
 1. Go to **Waiting List** in the left menu
-(img)
-2. Export people from the Waiting List, making sure to include only those from the day you are interested in.
-3. Rename the exported file to **wait.csv**
+
+![waiting](https://github.com/hermeneuta/registration/assets/53684759/c8cca5d7-7d2b-46ef-9f41-c56ac169072c)
+
+3. Export people from the Waiting List, making sure to include only those from the day you are interested in.
+4. Rename the exported file to **wait.csv**
 
 ##### Scripts
 
